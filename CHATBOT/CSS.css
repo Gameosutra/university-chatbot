@@ -1,0 +1,108 @@
+body {
+  background-image: url('bg.jpg');
+}
+/*.midbg{
+  border: 20px solid purple;
+  width: 1200px;
+  padding-left: 200px;
+}*/
+#kont .bar {
+  position:absolute;
+  width:1000px;
+  height :52px;
+  background : cyan;
+  opacity :0.7;
+  border-radius : 5px 5px 0 0;
+  z-index : -1;
+}
+
+#kont .footer {
+  position:absolute;
+  z-index : -1;
+  width:1000px;
+  height :60px;
+  background : cyan;
+  opacity :0.7;
+  border-radius : 0px 0px 5px 5px;
+  bottom:0px;
+}
+
+
+
+#kont{
+  position:relative;
+  margin-left:500px;
+  top:30px;
+  width : 1000px;
+  height:600px;
+  
+  border-radius : 5px;
+}
+#kont #backgroundofkont{
+  position:absolute;
+  width:1000px;
+  height:487px;
+  background:rgba(255,255,255,0.2);
+  opacity : 1;
+}
+#kont #messages li{
+  position:relative;
+  
+}
+#kont .a{
+  list-style-type:none;
+  position:absolute;
+  word-wrap: break-word;
+  right : 10px;
+  box-shadow : 0 1px 1px grey;
+  border-radius :20px 0 20px 30px;
+  padding : 10px;
+  max-width : 400px ;
+  margin-left:700px;
+  background :#e6e6e6 ;
+  color:black;
+  font-family: Satisfy;
+  margin-top:30px;
+}
+
+#kont .b{
+  margin-right:110px;
+  margin-top:5px;
+ list-style-type:none; 
+  
+  word-wrap: break-word;
+  max-width : 400px;
+  left:1px;
+  border-radius :0 30px 30px 20px;
+  padding : 10px;
+  background :  #29a329;
+  color:white;
+  font-family: Satisfy;
+  box-shadow : 0 2px 5px grey;
+}
+
+
+#kont .text textarea{
+  position:absolute;
+  bottom:0px;
+  left:5px;
+  padding: 2px;
+  width:950px;
+  height:50px;
+  resize:none;
+  outline: none;
+  border-color: transparent; 
+  opacity: 50%;
+}
+
+#kont .send img{
+  position:absolute;
+  bottom:3px;
+  right:3px;
+}
+
+#backgroundofkont{
+  
+  overflow :auto;
+  overflow-x : hidden;
+}

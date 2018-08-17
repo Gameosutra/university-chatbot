@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UNIVERSITY CHATBOT</title>
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <style type="text/css">
+        body {
+            height: 700px;
+            width: 1500px;
+            background: url("jiit.jpg");
+            background-repeat: no-repeat;
+            background-size: 150%;
+            font-family: Lobster;
+        }
+        .logo {
+            margin-top: 20px;
+            height: 200px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="row">
+        <div class="col-sm-6 "></div>
+        <div class="col-sm-4" style="background-color: grey; padding:20px; margin-top: 200px; border-radius: 10px;" >
+            <center>
+        <a href="http://www.jiit.ac.in/"><img src="logo.png" class="logo img-responsive">
+        </a>
+    </center>
+            <br>
+            
+
+            <form method="POST" role="form" name="login_form" action="validation.php" >
+                <!-- <legend>Form title</legend> -->
+
+                <div class="form-group">
+                    <!-- <center><label for="">LOGIN</label></center> -->
+                    <label class="btn btn-primary btn-warning">
+                    <input type="radio" name="login" value="STUDENT" checked onclick="student()">STUDENT
+                </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                <label class="btn btn-primary btn-danger">
+                    <input type="radio" name="login" value="FACULTY" onclick="faculty()">FACULTY
+                </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                <label class="btn btn-primary">
+                    <input type="radio" name="login" value="ADMIN" onclick="admin()">ADMIN
+                </label>
+                    <br>
+                    <br>
+                    <br>
+                    <div id = "admin">
+                    	<input type="text" class="form-control naam" name="username" placeholder="USERNAME" value="" required>
+                	</div>
+                    <br>
+                    <br>
+                    <input type="password" class="form-control" name="password" placeholder="PASSWORD" value="" required>
+                    <br>
+                    <br>
+                    <div id="faculty">
+                        <input type="text" class="form-control" name="DOB" placeholder="DOB DD-MM-YY" value="" required>
+                    </div>
+
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary btn-warning" id="Chakku" onclick="validate()">LOGIN</button>
+            </form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+        function student() {
+            $('#admin').html("<input type='text' class='form-control' name='username' placeholder='USERNAME' required >  ")
+            $('#faculty').html("<input type='text' class='form-control' name='DOB' placeholder='DOB DD-MM-YY' required >")
+
+        }
+
+        function faculty() {
+            $('#admin').html("<input type='text' class='form-control' name='username' placeholder='USERNAME' required  >")
+            $('#faculty').text("")
+        }
+
+        function admin() {
+            $('#faculty').text("")
+            $('#admin').text("")
+        }
+    </script>
+</body>
+</html>

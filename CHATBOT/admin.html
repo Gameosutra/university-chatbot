@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		.vl {
+			float: left;
+    border-left: 6px solid green;
+    margin-top: 100px;
+    height: 500px;
+    margin-left: 75px;
+    margin-bottom: 100px;
+			}
+		.form{
+			margin-top: 90px;
+		}
+	</style>
+</head>
+<body>
+    <button type="submit" onclick="window.location.href='login.html'" class="btn btn-warning" align="right" style="margin: 20px; margin-left:1400px; " >LOG OUT
+        </button>
+<div class="container">
+	<div style="float: left;" class="col-lg-5 form">
+		<u><h2 align="center">STUDENT</h2></u>
+		<form action="submit.php" method="POST" role="form">
+                <!-- <legend>Form title</legend> -->
+
+                <div class="form-group">
+                    <!-- <center><label for="">LOGIN</label></center> -->
+                    <div class="btn-group">
+                    <label class="btn btn-primary btn-warning">
+                    <input type="radio" name="insert" value="insert" checked>INSERT
+                </label>
+
+                <label class="btn btn-primary btn-danger">
+                    <input type="radio" name="insert"  value="delete">DELETE
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="insert"  value="update">UPDATE
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="insert"  value="database">SHOW DATABASE
+                </label>
+            </div>
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" name="ques" placeholder="KEYWORD" value="">
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" name="and" placeholder="ANSWER" value="">
+                    <br>
+                    <br>
+                    <input type="file" name="pic"  accept="image/*">
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" name="picadd" placeholder="PIC ADDRESS" value="">
+                    <br>
+                    <br>
+
+                </div>
+
+
+
+                <button type="submit" class="btn btn-danger">SUBMIT DATA</button>
+            </form>
+	</div>
+	<div class="vl" align="center" class="col-lg-2 "></div>
+	<div style="float: right;" class="col-lg-5 form" >
+
+		<u><h2 align="center">FACULTY</h2></u>
+        <!-- &nbsp&nbsp&nbsp&nbsp -->
+        
+	<form action="submitfaculty.php" method="POST" role="form">
+
+
+                <!-- <legend>Form title</legend> -->
+
+
+                <div class="form-group">
+                    <!-- <center><label for="">LOGIN</label></center> -->
+                    
+                <div class="form-group">
+                    <!-- <center><label for="">LOGIN</label></center> -->
+                    <div class="btn-group">
+                    <label class="btn btn-primary btn-warning">
+                    <input type="radio" name="insert" value="insert" checked>INSERT
+                </label>
+
+                <label class="btn btn-primary btn-danger">
+                    <input type="radio" name="insert"  value="delete" onclick="delete()">DELETE
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="insert"  value="update">UPDATE
+                </label>
+                <label class="btn btn-warning">
+                    <input type="radio" name="insert"  value="database">SHOW DATABASE
+                </label>
+            </div>
+
+
+                    <div id = "jiit">
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" name="ques" placeholder="KEYWORD" value="">
+                    <br>
+                    <br>
+                </div>
+                <div id = "noida">
+                    <input type="text" class="form-control" name="and" placeholder="ANSWER" value="">
+                    <br>
+                    <br>
+                </div>
+                <div id = "jp">
+                    <input type="file" name="pic"  accept="image/*">
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" name="picadd" placeholder="PIC ADDRESS" value="">
+                    <br>
+                    <br>
+                </div>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary btn-warning">SUBMIT DATA</button>
+            </form>
+	</div>
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
